@@ -1,0 +1,43 @@
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\shree\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+100
+100
+100
+
+Naive Bayes Performance
+Precision: 0.947
+Recall: 0.419
+F-Score: 0.581
+
+
+SVM performance
+Precision: 0.741
+Recall: 1.0
+F-Score: 0.851
+
+
+Neural Network Performance
+Precision: 0.93
+Recall: 0.93
+F-Score: 0.93
+
+
+KNN 1 Neighbor Performance
+Precision: 0.889
+Recall: 0.93
+F-Score: 0.909
+
+
+KNN 5 Neighbor Performance
+Precision: 0.833
+Recall: 0.814
+F-Score: 0.824
+
+
+KNN 5 Neighbor Weighted Performance
+Precision: 0.884
+Recall: 0.884
+F-Score: 0.884
+
+[Finished in 5.6s]
