@@ -4,10 +4,16 @@ import json
 import io
 from TwitterAPI import TwitterAPI, TwitterOAuth
 import pandas
+import shutil
+
 
 o = TwitterOAuth.read_file('skpdragon.twitterapi_credentials')
 api = TwitterAPI(o.consumer_key, o.consumer_secret, o.access_token_key, o.access_token_secret)
-tweet_count = 100
+tweet_count = 500
+file_loc = "Data//"+str(tweet_count)+"//"
+
+if not os.path.exists(os.path.dirname(file_loc)):
+	os.makedirs(file_loc)
 
 def searchTwitter(query,feed="search/tweets",api=api,n=tweet_count):
   r = []
@@ -39,8 +45,8 @@ for i in range(len(prefix_list)):
 	new_n = 0
 	old_n = 0
 	prefix = prefix_list[i]
-	count_file_name = "Data//" + prefix + "_count.txt"
-	tweet_file_name = "Data//" + prefix + "_tweet" + ".json"
+	count_file_name = file_loc + prefix + "_count.txt"
+	tweet_file_name = file_loc + prefix + "_tweet" + ".json"
 	tweets = searchTwitter(search_criteri[i])
 	df = pandas.read_json(json.dumps(tweets))
 	txt = [x for x in df['text']]

@@ -6,38 +6,122 @@
 1500
 
 Naive Bayes Performance
-Precision: 0.952
-Recall: 0.834
-F-Score: 0.889
+Scores for  cat
+Prescision : 0.828897338403
+Recall : 0.759581881533
+F1_Score : 0.792727272727
+
+
+Scores for  dog
+Prescision : 0.905172413793
+Recall : 0.681818181818
+F1_Score : 0.777777777778
+
+
+Scores for  catdog
+Prescision : 0.708641975309
+Recall : 0.940983606557
+F1_Score : 0.808450704225
+
 
 
 SVM performance
-Precision: 0.664
-Recall: 0.998
-F-Score: 0.798
+Scores for  cat
+Prescision : 0.511583011583
+Recall : 0.923344947735
+F1_Score : 0.658385093168
+
+
+Scores for  dog
+Prescision : 0.460750853242
+Recall : 0.438311688312
+F1_Score : 0.44925124792
+
+
+Scores for  catdog
+Prescision : 0.921348314607
+Recall : 0.268852459016
+F1_Score : 0.416243654822
+
 
 
 Neural Network Performance
-Precision: 0.957
-Recall: 0.958
-F-Score: 0.957
+Scores for  cat
+Prescision : 0.901023890785
+Recall : 0.919860627178
+F1_Score : 0.910344827586
+
+
+Scores for  dog
+Prescision : 0.906040268456
+Recall : 0.876623376623
+F1_Score : 0.891089108911
+
+
+Scores for  catdog
+Prescision : 0.94498381877
+Recall : 0.95737704918
+F1_Score : 0.951140065147
+
 
 
 KNN 1 Neighbor Performance
-Precision: 0.948
-Recall: 0.923
-F-Score: 0.936
+Scores for  cat
+Prescision : 0.814814814815
+Recall : 0.919860627178
+F1_Score : 0.864157119476
+
+
+Scores for  dog
+Prescision : 0.886446886447
+Recall : 0.785714285714
+F1_Score : 0.833046471601
+
+
+Scores for  catdog
+Prescision : 0.953795379538
+Recall : 0.947540983607
+F1_Score : 0.950657894737
+
 
 
 KNN 5 Neighbor Performance
-Precision: 0.958
-Recall: 0.838
-F-Score: 0.894
+Scores for  cat
+Prescision : 0.663390663391
+Recall : 0.940766550523
+F1_Score : 0.778097982709
+
+
+Scores for  dog
+Prescision : 0.890410958904
+Recall : 0.633116883117
+F1_Score : 0.740037950664
+
+
+Scores for  catdog
+Prescision : 0.948905109489
+Recall : 0.852459016393
+F1_Score : 0.898100172712
+
 
 
 KNN 5 Neighbor Weighted Performance
-Precision: 0.963
-Recall: 0.87
-F-Score: 0.914
+Scores for  cat
+Prescision : 0.727762803235
+Recall : 0.940766550523
+F1_Score : 0.820668693009
 
-[Finished in 135.1s]
+
+Scores for  dog
+Prescision : 0.923076923077
+Recall : 0.701298701299
+F1_Score : 0.79704797048
+
+
+Scores for  catdog
+Prescision : 0.942372881356
+Recall : 0.911475409836
+F1_Score : 0.926666666667
+
+
+[Finished in 171.9s]

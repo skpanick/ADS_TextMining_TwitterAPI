@@ -9,7 +9,6 @@ import sklearn.naive_bayes
 import sklearn.svm
 import sklearn.neighbors
 import sklearn.neural_network
-from TwitterAPI import TwitterAPI, TwitterOAuth
 import nltk
 import nltk.corpus
 import matplotlib.pyplot
@@ -17,17 +16,27 @@ from glob import glob
 
 nltk.download('stopwords')
 stopwds = list(nltk.corpus.stopwords.words('english'))
+tweet_count = 4000
+file_loc = "Data//"+str(tweet_count)+"//"
+prefix_list = ["cat","dog","catdog"]
 
 def print_score(Ytrue,Ypred):
-  s = (sklearn.metrics.precision_score(Ytrue,Ypred),
-          sklearn.metrics.recall_score(Ytrue,Ypred),
-          sklearn.metrics.f1_score(Ytrue,Ypred))
-  print('Precision: {:0.3}\nRecall: {:0.3}\nF-Score: {:0.3}\n'.format(*s))
+	prescision = sklearn.metrics.precision_score(Ytrue,Ypred,average=None)
+	recall = sklearn.metrics.recall_score(Ytrue,Ypred,average=None)
+	f1_score = sklearn.metrics.f1_score(Ytrue,Ypred,average=None)
+	prescision.tolist()
+	recall.tolist()
+	f1_score.tolist()
+	for i in range(len(prefix_list)):
+		print("Scores for " , prefix_list[i])
+		print ("Prescision :",prescision[i])
+		print ("Recall :",recall[i])
+		print ("F1_Score :",f1_score[i])
+		print("\n")
 
-
-cat_df = pandas.read_json("Data\\cat_tweet.json")
-dog_df = pandas.read_json("Data\\dog_tweet.json")
-catdog_df = pandas.read_json("Data\\catdog_tweet.json")
+cat_df = pandas.read_json(file_loc+"cat_tweet.json")
+dog_df = pandas.read_json(file_loc+"dog_tweet.json")
+catdog_df = pandas.read_json(file_loc+"catdog_tweet.json")
 
 cat_df.head()
 dog_df.head()
@@ -48,7 +57,8 @@ catdog_tdm = vectorizer.transform(catdog_txt).toarray()
 """### Create visible matricies and combine"""
 zeros = numpy.zeros((len(cat_txt),1))
 ones = numpy.ones((len(dog_txt),1))
-twos = numpy.ones((len(catdog_txt),1))
+twos = numpy.ndarray(shape=(len(catdog_txt),1),dtype = int)
+twos.fill(2)
 combined_tdm = numpy.concatenate((cat_tdm,dog_tdm,catdog_tdm),axis=0)
 Y = numpy.ravel(numpy.concatenate((zeros,ones,twos),axis=0))
 

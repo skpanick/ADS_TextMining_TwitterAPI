@@ -6,38 +6,124 @@
 100
 
 Naive Bayes Performance
-Precision: 0.947
-Recall: 0.419
-F-Score: 0.581
+Scores for  cat
+Prescision : 0.9
+Recall : 0.45
+F1_Score : 0.6
+
+
+Scores for  dog
+Prescision : 0.625
+Recall : 0.277777777778
+F1_Score : 0.384615384615
+
+
+Scores for  catdog
+Prescision : 0.52380952381
+Recall : 1.0
+F1_Score : 0.6875
+
 
 
 SVM performance
-Precision: 0.741
-Recall: 1.0
-F-Score: 0.851
+Scores for  cat
+Prescision : 0.833333333333
+Recall : 0.5
+F1_Score : 0.625
 
+
+Scores for  dog
+Prescision : 0.5
+Recall : 0.722222222222
+F1_Score : 0.590909090909
+
+
+Scores for  catdog
+Prescision : 0.818181818182
+Recall : 0.818181818182
+F1_Score : 0.818181818182
+
+
+D:\ProgrammingInstall\Anaconda\lib\site-packages\sklearn\neural_network\multilayer_perceptron.py:564: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
 
 Neural Network Performance
-Precision: 0.93
-Recall: 0.93
-F-Score: 0.93
+Scores for  cat
+Prescision : 0.833333333333
+Recall : 0.75
+F1_Score : 0.789473684211
+
+
+Scores for  dog
+Prescision : 0.733333333333
+Recall : 0.611111111111
+F1_Score : 0.666666666667
+
+
+Scores for  catdog
+Prescision : 0.814814814815
+Recall : 1.0
+F1_Score : 0.897959183673
+
 
 
 KNN 1 Neighbor Performance
-Precision: 0.889
-Recall: 0.93
-F-Score: 0.909
+Scores for  cat
+Prescision : 0.666666666667
+Recall : 0.8
+F1_Score : 0.727272727273
+
+
+Scores for  dog
+Prescision : 0.692307692308
+Recall : 0.5
+F1_Score : 0.58064516129
+
+
+Scores for  catdog
+Prescision : 0.913043478261
+Recall : 0.954545454545
+F1_Score : 0.933333333333
+
 
 
 KNN 5 Neighbor Performance
-Precision: 0.833
-Recall: 0.814
-F-Score: 0.824
+Scores for  cat
+Prescision : 0.695652173913
+Recall : 0.8
+F1_Score : 0.744186046512
+
+
+Scores for  dog
+Prescision : 0.571428571429
+Recall : 0.666666666667
+F1_Score : 0.615384615385
+
+
+Scores for  catdog
+Prescision : 1.0
+Recall : 0.727272727273
+F1_Score : 0.842105263158
+
 
 
 KNN 5 Neighbor Weighted Performance
-Precision: 0.884
-Recall: 0.884
-F-Score: 0.884
+Scores for  cat
+Prescision : 0.75
+Recall : 0.75
+F1_Score : 0.75
 
-[Finished in 5.6s]
+
+Scores for  dog
+Prescision : 0.736842105263
+Recall : 0.777777777778
+F1_Score : 0.756756756757
+
+
+Scores for  catdog
+Prescision : 1.0
+Recall : 0.954545454545
+F1_Score : 0.976744186047
+
+
+[Finished in 6.1s]

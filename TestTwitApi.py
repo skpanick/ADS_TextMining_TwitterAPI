@@ -17,6 +17,8 @@ from glob import glob
 
 nltk.download('stopwords')
 stopwds = list(nltk.corpus.stopwords.words('english'))
+tweet_count = 50
+file_loc = "Data//"+str(tweet_count)+"//"
 
 def print_score(Ytrue,Ypred):
   s = (sklearn.metrics.precision_score(Ytrue,Ypred),
@@ -25,9 +27,9 @@ def print_score(Ytrue,Ypred):
   print('Precision: {:0.3}\nRecall: {:0.3}\nF-Score: {:0.3}\n'.format(*s))
 
 
-cat_df = pandas.read_json("Data\\cat_tweet.json")
-dog_df = pandas.read_json("Data\\dog_tweet.json")
-catdog_df = pandas.read_json("Data\\catdog_tweet.json")
+cat_df = pandas.read_json(file_loc+"cat_tweet.json")
+dog_df = pandas.read_json(file_loc+"dog_tweet.json")
+catdog_df = pandas.read_json(file_loc+"catdog_tweet.json")
 
 cat_df.head()
 dog_df.head()
@@ -39,3 +41,16 @@ catdog_txt = [(x.replace('#dogs',"#blah")).replace('#cat','#blah') for x in catd
 print(len(cat_txt))
 print(len(dog_txt))
 print(len(catdog_txt))
+
+zeros = numpy.zeros((len(cat_txt),1))
+ones = numpy.ones((len(dog_txt),1))
+twos = numpy.ndarray(shape=(len(catdog_txt),1),dtype = int)
+twos.fill(2)
+print (zeros)
+print ("\n")
+print (ones)
+print ("\n")
+print (twos)
+print ("\n")
+Y = numpy.ravel(numpy.concatenate((zeros,ones,twos),axis=0))
+print (Y)
