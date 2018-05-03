@@ -1,40 +1,127 @@
 [nltk_data] Downloading package stopwords to
 [nltk_data]     C:\Users\shree\AppData\Roaming\nltk_data...
 [nltk_data]   Package stopwords is already up-to-date!
+4000
+4000
+4000
 
 Naive Bayes Performance
-Precision: 0.977
-Recall: 0.857
-F-Score: 0.913
+Scores for  cat
+Prescision : 0.926934097421
+Recall : 0.790953545232
+F1_Score : 0.853562005277
+
+
+Scores for  dog
+Prescision : 0.933130699088
+Recall : 0.761786600496
+F1_Score : 0.838797814208
+
+
+Scores for  catdog
+Prescision : 0.706896551724
+Recall : 0.951030927835
+F1_Score : 0.810989010989
+
 
 
 SVM performance
-Precision: 0.669
-Recall: 1.0
-F-Score: 0.801
+Scores for  cat
+Prescision : 0.613709677419
+Recall : 0.930317848411
+F1_Score : 0.739552964043
+
+
+Scores for  dog
+Prescision : 0.528718703976
+Recall : 0.44540942928
+F1_Score : 0.483501683502
+
+
+Scores for  catdog
+Prescision : 0.904365904366
+Recall : 0.560567010309
+F1_Score : 0.692124105012
+
 
 
 Neural Network Performance
-Precision: 0.975
-Recall: 0.962
-F-Score: 0.968
+Scores for  cat
+Prescision : 0.933414043584
+Recall : 0.942542787286
+F1_Score : 0.93795620438
+
+
+Scores for  dog
+Prescision : 0.913425345044
+Recall : 0.903225806452
+F1_Score : 0.908296943231
+
+
+Scores for  catdog
+Prescision : 0.952380952381
+Recall : 0.953608247423
+F1_Score : 0.952994204765
+
 
 
 KNN 1 Neighbor Performance
-Precision: 0.959
-Recall: 0.92
-F-Score: 0.939
+Scores for  cat
+Prescision : 0.868778280543
+Recall : 0.938875305623
+F1_Score : 0.902467685076
+
+
+Scores for  dog
+Prescision : 0.92597577389
+Recall : 0.853598014888
+F1_Score : 0.888315041963
+
+
+Scores for  catdog
+Prescision : 0.970245795602
+Recall : 0.966494845361
+F1_Score : 0.968366688186
+
 
 
 KNN 5 Neighbor Performance
-Precision: 0.966
-Recall: 0.868
-F-Score: 0.914
+Scores for  cat
+Prescision : 0.777442094663
+Recall : 0.943765281174
+F1_Score : 0.852567642187
+
+
+Scores for  dog
+Prescision : 0.90261627907
+Recall : 0.77047146402
+F1_Score : 0.831325301205
+
+
+Scores for  catdog
+Prescision : 0.958275382476
+Recall : 0.887886597938
+F1_Score : 0.921739130435
+
 
 
 KNN 5 Neighbor Weighted Performance
-Precision: 0.975
-Recall: 0.887
-F-Score: 0.929
+Scores for  cat
+Prescision : 0.825481798715
+Recall : 0.942542787286
+F1_Score : 0.880136986301
 
-[Finished in 1602.4s]
+
+Scores for  dog
+Prescision : 0.917251051893
+Recall : 0.81141439206
+F1_Score : 0.861092824226
+
+
+Scores for  catdog
+Prescision : 0.964143426295
+Recall : 0.935567010309
+F1_Score : 0.94964028777
+
+
+[Finished in 2341.6s]
