@@ -1,0 +1,129 @@
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\shree\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+50
+50
+50
+
+Naive Bayes Performance
+Scores for  cat
+Prescision : 0.571428571429
+Recall : 0.8
+F1_Score : 0.666666666667
+
+
+Scores for  dog
+Prescision : 0.666666666667
+Recall : 0.666666666667
+F1_Score : 0.666666666667
+
+
+Scores for  catdog
+Prescision : 1.0
+Recall : 0.5
+F1_Score : 0.666666666667
+
+
+
+SVM performance
+Scores for  cat
+Prescision : 0.529411764706
+Recall : 0.9
+F1_Score : 0.666666666667
+
+
+Scores for  dog
+Prescision : 0.75
+Recall : 0.25
+F1_Score : 0.375
+
+
+Scores for  catdog
+Prescision : 0.666666666667
+Recall : 0.75
+F1_Score : 0.705882352941
+
+
+D:\ProgrammingInstall\Anaconda\lib\site-packages\sklearn\neural_network\multilayer_perceptron.py:564: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+
+Neural Network Performance
+Scores for  cat
+Prescision : 0.666666666667
+Recall : 0.8
+F1_Score : 0.727272727273
+
+
+Scores for  dog
+Prescision : 0.727272727273
+Recall : 0.666666666667
+F1_Score : 0.695652173913
+
+
+Scores for  catdog
+Prescision : 0.714285714286
+Recall : 0.625
+F1_Score : 0.666666666667
+
+
+
+KNN 1 Neighbor Performance
+Scores for  cat
+Prescision : 0.666666666667
+Recall : 0.8
+F1_Score : 0.727272727273
+
+
+Scores for  dog
+Prescision : 0.583333333333
+Recall : 0.583333333333
+F1_Score : 0.583333333333
+
+
+Scores for  catdog
+Prescision : 0.833333333333
+Recall : 0.625
+F1_Score : 0.714285714286
+
+
+
+KNN 5 Neighbor Performance
+Scores for  cat
+Prescision : 0.6
+Recall : 0.9
+F1_Score : 0.72
+
+
+Scores for  dog
+Prescision : 0.555555555556
+Recall : 0.416666666667
+F1_Score : 0.47619047619
+
+
+Scores for  catdog
+Prescision : 0.5
+Recall : 0.375
+F1_Score : 0.428571428571
+
+
+
+KNN 5 Neighbor Weighted Performance
+Scores for  cat
+Prescision : 0.642857142857
+Recall : 0.9
+F1_Score : 0.75
+
+
+Scores for  dog
+Prescision : 0.6
+Recall : 0.5
+F1_Score : 0.545454545455
+
+
+Scores for  catdog
+Prescision : 0.833333333333
+Recall : 0.625
+F1_Score : 0.714285714286
+
+
+[Finished in 5.6s]

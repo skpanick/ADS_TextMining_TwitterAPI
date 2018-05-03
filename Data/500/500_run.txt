@@ -1,0 +1,127 @@
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\shree\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+500
+500
+500
+
+Naive Bayes Performance
+Scores for  cat
+Prescision : 0.843137254902
+Recall : 0.886597938144
+F1_Score : 0.86432160804
+
+
+Scores for  dog
+Prescision : 0.685483870968
+Recall : 0.801886792453
+F1_Score : 0.739130434783
+
+
+Scores for  catdog
+Prescision : 0.864864864865
+Recall : 0.659793814433
+F1_Score : 0.748538011696
+
+
+
+SVM performance
+Scores for  cat
+Prescision : 0.975609756098
+Recall : 0.412371134021
+F1_Score : 0.579710144928
+
+
+Scores for  dog
+Prescision : 0.497461928934
+Recall : 0.924528301887
+F1_Score : 0.646864686469
+
+
+Scores for  catdog
+Prescision : 0.870967741935
+Recall : 0.556701030928
+F1_Score : 0.679245283019
+
+
+
+Neural Network Performance
+Scores for  cat
+Prescision : 0.952941176471
+Recall : 0.835051546392
+F1_Score : 0.89010989011
+
+
+Scores for  dog
+Prescision : 0.810344827586
+Recall : 0.88679245283
+F1_Score : 0.846846846847
+
+
+Scores for  catdog
+Prescision : 0.89898989899
+Recall : 0.917525773196
+F1_Score : 0.908163265306
+
+
+
+KNN 1 Neighbor Performance
+Scores for  cat
+Prescision : 0.89010989011
+Recall : 0.835051546392
+F1_Score : 0.86170212766
+
+
+Scores for  dog
+Prescision : 0.769230769231
+Recall : 0.849056603774
+F1_Score : 0.807174887892
+
+
+Scores for  catdog
+Prescision : 0.891304347826
+Recall : 0.845360824742
+F1_Score : 0.867724867725
+
+
+
+KNN 5 Neighbor Performance
+Scores for  cat
+Prescision : 0.765306122449
+Recall : 0.773195876289
+F1_Score : 0.769230769231
+
+
+Scores for  dog
+Prescision : 0.75
+Recall : 0.792452830189
+F1_Score : 0.770642201835
+
+
+Scores for  catdog
+Prescision : 0.9
+Recall : 0.835051546392
+F1_Score : 0.866310160428
+
+
+
+KNN 5 Neighbor Weighted Performance
+Scores for  cat
+Prescision : 0.838709677419
+Recall : 0.80412371134
+F1_Score : 0.821052631579
+
+
+Scores for  dog
+Prescision : 0.80701754386
+Recall : 0.867924528302
+F1_Score : 0.836363636364
+
+
+Scores for  catdog
+Prescision : 0.924731182796
+Recall : 0.886597938144
+F1_Score : 0.905263157895
+
+
+[Finished in 17.1s]
